@@ -20,7 +20,7 @@ spec:
         app: ctf
     spec:
       containers:
-      - image: kmaneshni/cfl-ctf-app:version1.0
+      - image: kmaneshni/cfl-ctf-app:version2.0
         name: cfl-ctf-app
         resources: {}
 status: {}

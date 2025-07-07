@@ -15,7 +15,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: ctf
+        app: cfl-ctf-challenge-2025
     spec:
       containers:
       - image: kmaneshni/cfl-ctf-app:version2.0

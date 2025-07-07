@@ -5,7 +5,6 @@ metadata:
   labels:
     app: cfl-ctf-challenge-2025
   name: ctf
-  namespace: cfl
 spec:
   replicas: 1
   selector:

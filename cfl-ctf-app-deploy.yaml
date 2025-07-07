@@ -17,6 +17,8 @@ spec:
       labels:
         app: cfl-ctf-challenge-2025
     spec:
+      nodeSelector:
+        node.kubernetes.io/instance-type: k3s
       containers:
       - image: kmaneshni/cfl-ctf-app:version3.0
         name: cfl-ctf-app

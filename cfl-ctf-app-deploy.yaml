@@ -1,0 +1,26 @@
+> k create deploy -n cfl ctf --image=kmaneshni/cfl-ctf-app:version1.0 --dry-run=client -oyaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: cfl-ctf-challenge-2025
+  name: ctf
+  namespace: cfl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ctf
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ctf
+    spec:
+      containers:
+      - image: kmaneshni/cfl-ctf-app:version1.0
+        name: cfl-ctf-app
+        resources: {}
+status: {}

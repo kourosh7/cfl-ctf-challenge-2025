@@ -17,7 +17,7 @@ spec:
       labels:
         app: cfl-ctf-challenge-2025
     spec:
-      serviceAccountName: gitjob
+      serviceAccountName: fleet-agent
       nodeSelector:
         node.kubernetes.io/instance-type: k3s
       containers:
